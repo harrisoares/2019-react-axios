@@ -14,7 +14,7 @@ class App extends Component {
 
   render = () => {
     return (
-      <Container style>
+      <Container style={{margin: 20}}>
         {!isAuthenticated() && <LoginPage onLogin={this.update} />}
         {isAuthenticated() && <TaskPage />}
       </Container>

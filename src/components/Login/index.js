@@ -48,14 +48,13 @@ class LoginPage extends Component {
     const { nickname, password } = this.state;
 
     return (
-      <Container fluid>
+      <Container>
         <Header>Login</Header>
         <Form onSubmit={this.handleLogin}>
           <Form.Field>
             <Input
               label="Apelido"
               icon="user"
-              iconPosition="right"
               placeholder="Apelido"
               name="nickname"
               value={nickname}
@@ -66,7 +65,6 @@ class LoginPage extends Component {
             <Input
               label="Senha"
               icon="lock"
-              iconPosition="right"
               type="password"
               placeholder="Senha"
               name="password"
